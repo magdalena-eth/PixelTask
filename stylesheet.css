@@ -1,0 +1,34 @@
+* {
+    font-family: "pixel", sans-serif ;
+    font-size: large;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+}
+
+#addTaskBtn:hover{
+    box-shadow: 2px 2px 4px cornflowerblue;
+}
+
+#taskInputContainer {  /* Container für taskInput und addTaskBtn */
+    display: flex;           /* Flexbox verwenden */
+    justify-content: center; /* Zentriert die Elemente horizontal */
+    align-items: center;     /* Zentriert die Elemente vertikal */
+    gap: 10px;               /* Optionaler Abstand zwischen den Elementen */
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("assets/Jersey15-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+

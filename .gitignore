@@ -1,0 +1,25 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Systemdateien
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js (nur falls du npm später nutzt)
+node_modules/
+
+# Build-Ordner (optional, falls verwendet)
+dist/
+build/
+
+# Sonstiges (Backup-/Swapdateien)
+*.swp
+*.bak
+*.tmp
