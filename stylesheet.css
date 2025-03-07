@@ -13,6 +13,7 @@ body {
     place-items: center;
 }
 
+
 #addTaskBtn:hover{
     box-shadow: 2px 2px 4px cornflowerblue;
 }
@@ -22,6 +23,15 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+li button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+
 }
 
 li span {
