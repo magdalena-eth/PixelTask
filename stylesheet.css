@@ -11,19 +11,30 @@ h1 {
 body {
     display: grid;
     place-items: center;
-
 }
 
 #addTaskBtn:hover{
     box-shadow: 2px 2px 4px cornflowerblue;
 }
 
-#taskInputContainer {  /* Container für taskInput und addTaskBtn */
-    display: flex;           /* Flexbox verwenden */
-    justify-content: center; /* Zentriert die Elemente horizontal */
-    align-items: center;     /* Zentriert die Elemente vertikal */
-    gap: 10px;               /* Optionaler Abstand zwischen den Elementen */
+#taskInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+li span {
+    cursor: pointer;
+}
+
+li span[style="text-decoration: line-through;"] {
+    color: cornflowerblue;
+}
+
+/*
+TODO: color change bullet points
+ */
 
 @font-face {
     font-family: "pixel";

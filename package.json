@@ -1,0 +1,23 @@
+{
+  "name": "to-do-liste",
+  "version": "1.0.0",
+  "description": "Ein simples To-Do-Listen-Projekt, erstellt in **IntelliJ IDEA** mit reinem HTML, CSS und JavaScript.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdalena-eth/todo-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magdalena-eth/todo-list/issues"
+  },
+  "homepage": "https://github.com/magdalena-eth/todo-list#readme",
+  "devDependencies": {
+    "electron": "^35.0.0"
+  }
+}
