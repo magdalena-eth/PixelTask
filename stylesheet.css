@@ -1,23 +1,37 @@
 * {
-    font-family: "pixel", sans-serif ;
+    font-family: "pixel", sans-serif;
     font-size: large;
-    background-color: antiquewhite;
 }
 
+/* Fixierte obere Zeile */
+#topLine {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Hauptüberschrift */
 h1 {
     font-size: xx-large;
 }
 
+/* Body-Anordnung */
 body {
     display: grid;
     place-items: center;
 }
 
-
-#addTaskBtn:hover{
+/* Button Hover-Effekt */
+#addTaskBtn:hover {
     box-shadow: 2px 2px 4px cornflowerblue;
 }
 
+/* Eingabebereich */
 #taskInputContainer {
     display: flex;
     justify-content: center;
@@ -25,31 +39,60 @@ body {
     gap: 10px;
 }
 
+/* Allgemeine Aufgaben-Styles */
+li {
+    list-style: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Prioritätsfarben */
+li.low-priority {
+    background-color: #70a397;
+}
+
+li.medium-priority {
+    background-color: #e9c93a;
+}
+
+li.high-priority {
+    background-color: #ad3a3c;
+}
+
+/* Hover-Effekt für Aufgaben */
+li:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Button-Styling innerhalb der Aufgaben */
 li button {
     margin-left: 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 16px;
-
 }
 
+/* Durchgestrichene Aufgaben */
 li span {
     cursor: pointer;
 }
 
 li span[style="text-decoration: line-through;"] {
-    color: cornflowerblue;
+    color: black;
 }
 
-/*
-TODO: color change bullet points
- */
-
+/* Schriftart einbinden */
 @font-face {
     font-family: "pixel";
     src: url("assets/Jersey15-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
-

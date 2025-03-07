@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do Liste</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 
+<!-- Obere Leiste mit Datum -->
+<header id="topLine">
+    <span id="currentDate"></span>
+</header>
+
+<!-- Hauptüberschrift -->
 <h1>Heutige To-Do Liste</h1>
-<div id="taskInputContainer">
+
+<!-- Eingabebereich für neue Aufgaben -->
+<section id="taskInputContainer">
     <input type="text" id="taskInput" placeholder="Neue Aufgabe ...">
+    <select id="prioritySelect">
+        <option value="low">niedrig</option>
+        <option value="medium">mittel</option>
+        <option value="high">hoch</option>
+    </select>
     <button id="addTaskBtn">Aufgabe hinzufügen</button>
-</div>
-<div id="taskListContainer">
+</section>
+
+<!-- Aufgabenliste -->
+<section id="taskListContainer">
     <ul id="taskList"></ul>
-</div>
+</section>
 
 <script src="script.js"></script>
 </body>
